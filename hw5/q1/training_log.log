@@ -1,0 +1,236 @@
+model structure
+********************
+Convolution_(16, 1, 5, 5)_0
+Convolution_(32, 16, 5, 5)_1
+Flatten_2
+Dropout_0.25_3
+Perceptron_(1568, 1000)_4
+Dropout_0.1_5
+Perceptron_(1000, 10)_6
+********************
+---------------
+Epoch 0 done, train acc=0.14000, train loss=19.07843
+Validation accuracy = 0.2307692
+---------------
+---------------
+Epoch 1 done, train acc=0.23500, train loss=16.58725
+---------------
+Epoch 2 done, train acc=0.29000, train loss=15.33936
+---------------
+Epoch 3 done, train acc=0.35500, train loss=14.11901
+---------------
+Epoch 4 done, train acc=0.41500, train loss=12.56722
+---------------
+Epoch 5 done, train acc=0.30500, train loss=14.49398
+---------------
+Epoch 6 done, train acc=0.40000, train loss=12.41331
+---------------
+Epoch 7 done, train acc=0.44500, train loss=11.70551
+---------------
+Epoch 8 done, train acc=0.38500, train loss=12.63780
+---------------
+Epoch 9 done, train acc=0.46500, train loss=10.74628
+---------------
+Epoch 10 done, train acc=0.51500, train loss=10.31255
+Validation accuracy = 0.3076923
+---------------
+---------------
+Epoch 11 done, train acc=0.51000, train loss=10.34282
+---------------
+Epoch 12 done, train acc=0.49000, train loss=10.85246
+---------------
+Epoch 13 done, train acc=0.53000, train loss=10.10297
+---------------
+Epoch 14 done, train acc=0.57000, train loss=8.94291
+---------------
+Epoch 15 done, train acc=0.60000, train loss=8.33439
+---------------
+Epoch 16 done, train acc=0.60500, train loss=8.29618
+---------------
+Epoch 17 done, train acc=0.57500, train loss=8.92142
+---------------
+Epoch 18 done, train acc=0.59500, train loss=8.66142
+---------------
+Epoch 19 done, train acc=0.59500, train loss=8.15790
+---------------
+Epoch 20 done, train acc=0.65500, train loss=7.13779
+Validation accuracy = 0.3846154
+---------------
+---------------
+Epoch 21 done, train acc=0.67500, train loss=6.75862
+---------------
+Epoch 22 done, train acc=0.66500, train loss=7.10627
+---------------
+Epoch 23 done, train acc=0.69500, train loss=6.87128
+---------------
+Epoch 24 done, train acc=0.74000, train loss=5.81361
+---------------
+Epoch 25 done, train acc=0.70000, train loss=6.32862
+---------------
+Epoch 26 done, train acc=0.73000, train loss=5.98631
+---------------
+Epoch 27 done, train acc=0.73000, train loss=5.64700
+---------------
+Epoch 28 done, train acc=0.78000, train loss=5.16967
+---------------
+Epoch 29 done, train acc=0.77000, train loss=5.28102
+---------------
+Epoch 30 done, train acc=0.77500, train loss=5.30081
+Validation accuracy = 0.3846154
+---------------
+---------------
+Epoch 31 done, train acc=0.81000, train loss=4.81848
+---------------
+Epoch 32 done, train acc=0.73500, train loss=6.10569
+---------------
+Epoch 33 done, train acc=0.79000, train loss=5.51254
+---------------
+Epoch 34 done, train acc=0.75500, train loss=5.50736
+---------------
+Epoch 35 done, train acc=0.79500, train loss=4.97255
+---------------
+Epoch 36 done, train acc=0.75500, train loss=5.67195
+---------------
+Epoch 37 done, train acc=0.79500, train loss=5.01260
+---------------
+Epoch 38 done, train acc=0.83000, train loss=4.48589
+---------------
+Epoch 39 done, train acc=0.82500, train loss=4.56991
+---------------
+Epoch 40 done, train acc=0.83500, train loss=4.02290
+Validation accuracy = 0.3846154
+---------------
+---------------
+Epoch 41 done, train acc=0.88500, train loss=3.72775
+---------------
+Epoch 42 done, train acc=0.82500, train loss=4.18358
+---------------
+Epoch 43 done, train acc=0.85500, train loss=4.21855
+---------------
+Epoch 44 done, train acc=0.83500, train loss=4.31119
+---------------
+Epoch 45 done, train acc=0.87000, train loss=4.16621
+---------------
+Epoch 46 done, train acc=0.83000, train loss=4.30613
+---------------
+Epoch 47 done, train acc=0.87000, train loss=4.17648
+---------------
+Epoch 48 done, train acc=0.86000, train loss=3.92375
+---------------
+Epoch 49 done, train acc=0.87500, train loss=3.82491
+---------------
+Epoch 50 done, train acc=0.90000, train loss=3.62460
+Validation accuracy = 0.5384615
+---------------
+---------------
+Epoch 51 done, train acc=0.91000, train loss=3.49769
+---------------
+Epoch 52 done, train acc=0.85000, train loss=4.46473
+---------------
+Epoch 53 done, train acc=0.85500, train loss=4.23939
+---------------
+Epoch 54 done, train acc=0.85000, train loss=4.57755
+---------------
+Epoch 55 done, train acc=0.85500, train loss=4.51032
+---------------
+Epoch 56 done, train acc=0.85500, train loss=4.22382
+---------------
+Epoch 57 done, train acc=0.86500, train loss=4.32437
+---------------
+Epoch 58 done, train acc=0.87000, train loss=3.94664
+---------------
+Epoch 59 done, train acc=0.87000, train loss=4.13703
+---------------
+Epoch 60 done, train acc=0.87500, train loss=4.09717
+Validation accuracy = 0.4615385
+---------------
+---------------
+Epoch 61 done, train acc=0.85500, train loss=4.62626
+---------------
+Epoch 62 done, train acc=0.89000, train loss=3.75890
+---------------
+Epoch 63 done, train acc=0.84500, train loss=4.45319
+---------------
+Epoch 64 done, train acc=0.81000, train loss=5.23808
+---------------
+Epoch 65 done, train acc=0.84000, train loss=4.82257
+---------------
+Epoch 66 done, train acc=0.85500, train loss=4.61924
+---------------
+Epoch 67 done, train acc=0.83500, train loss=4.99515
+---------------
+Epoch 68 done, train acc=0.82000, train loss=5.39670
+---------------
+Epoch 69 done, train acc=0.81500, train loss=5.28440
+---------------
+Epoch 70 done, train acc=0.74500, train loss=6.72286
+Validation accuracy = 0.5769231
+---------------
+---------------
+Epoch 71 done, train acc=0.79500, train loss=5.98533
+---------------
+Epoch 72 done, train acc=0.72500, train loss=7.50425
+---------------
+Epoch 73 done, train acc=0.79000, train loss=6.17195
+---------------
+Epoch 74 done, train acc=0.72000, train loss=7.49219
+---------------
+Epoch 75 done, train acc=0.69500, train loss=8.00757
+---------------
+Epoch 76 done, train acc=0.68500, train loss=8.24033
+---------------
+Epoch 77 done, train acc=0.75500, train loss=6.85970
+---------------
+Epoch 78 done, train acc=0.67000, train loss=8.56737
+---------------
+Epoch 79 done, train acc=0.74500, train loss=7.04961
+---------------
+Epoch 80 done, train acc=0.66000, train loss=8.84055
+Validation accuracy = 0.6923077
+---------------
+---------------
+Epoch 81 done, train acc=0.74000, train loss=7.19856
+---------------
+Epoch 82 done, train acc=0.82000, train loss=5.55786
+---------------
+Epoch 83 done, train acc=0.89500, train loss=4.02101
+---------------
+Epoch 84 done, train acc=0.84000, train loss=5.14742
+---------------
+Epoch 85 done, train acc=0.71500, train loss=7.71206
+---------------
+Epoch 86 done, train acc=0.69000, train loss=8.22506
+---------------
+Epoch 87 done, train acc=0.78500, train loss=6.22524
+---------------
+Epoch 88 done, train acc=0.70500, train loss=7.91462
+---------------
+Epoch 89 done, train acc=0.72000, train loss=7.60958
+---------------
+Epoch 90 done, train acc=0.79500, train loss=6.07088
+Validation accuracy = 0.9230769
+---------------
+---------------
+Epoch 91 done, train acc=0.67500, train loss=8.48469
+---------------
+Epoch 92 done, train acc=0.60500, train loss=9.88515
+---------------
+Epoch 93 done, train acc=0.67000, train loss=8.51394
+---------------
+Epoch 94 done, train acc=0.70500, train loss=7.75047
+---------------
+Epoch 95 done, train acc=0.77000, train loss=6.48316
+---------------
+Epoch 96 done, train acc=0.76000, train loss=6.74509
+---------------
+Epoch 97 done, train acc=0.82500, train loss=5.43109
+---------------
+Epoch 98 done, train acc=0.79500, train loss=5.97383
+---------------
+Epoch 99 done, train acc=0.86500, train loss=4.37148
+Validation accuracy = 0.8076923
+**********
+Training done.
+Training acc: 0.865
+Validatioin acc: 0.8076923076923077
+Best Validatioin acc: 0.9230769230769231 at epoch 90
