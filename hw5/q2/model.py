@@ -66,5 +66,5 @@ class CNN(nn.Module):
             # (B, 10)
         )
     
-    def forward(self, x: torch.Tensor) -> torch.Tensor:
+    def forward(self, x):
         return self.body(x)

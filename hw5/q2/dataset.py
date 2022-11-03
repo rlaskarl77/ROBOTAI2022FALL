@@ -28,21 +28,24 @@ class CIFAR10Dataset(Dataset):
         self.mixup = True
         self.mixup_alpha = 1.
 
-        self.transforms = nn.Sequential(
-            tf.ToTensor(),
-            tf.Normalize(),
-        )
+        self.label_smoothing = True
+        self.label_smoothing_alpha = 0.1
 
-        self.augmentations = nn.Sequential(
+        self.transforms = tf.Compose([
+            tf.ToTensor(),
+            tf.Normalize(0.4720751017922801, 0.23932276261069446),
+        ])
+
+        self.augmentations = tf.Compose([
             tf.RandomHorizontalFlip(0.5),
             tf.RandomVerticalFlip(0.5),
             tf.RandomCrop((32, 32), padding=2),
-        )
+        ])
         
     def __len__(self) -> int:
         return self.n
     
-    def __get__(self, idx: int) -> Tuple[torch.Tensor, torch.Tensor]:
+    def __getitem__(self, idx: int) -> Tuple[torch.Tensor, torch.Tensor]:
         
         image, label = self.getImageAndLabel(idx)
 
@@ -51,16 +54,20 @@ class CIFAR10Dataset(Dataset):
 
             if self.mixup:
                 image, label = self._mixup(image, label, self.mixup_alpha)
+            
+            if self.label_smoothing:
+                label = (1-self.label_smoothing_alpha) * label \
+                    + self.label_smoothing_alpha / self.out_dim
 
         return image, label
     
     def getImageAndLabel(self, idx: int) -> Tuple[torch.Tensor, torch.Tensor]:
-        values = self.datas[idx].split(',')
+        values = self.datas[idx].rstrip().split(',')
         
-        label = torch.Tensor(values[0])
-        label = F.one_hot(label, num_classes=self.out_dim)
+        label = torch.from_numpy(np.array(values[0], dtype=int))
+        label = F.one_hot(label, num_classes=self.out_dim).float()
 
-        image = np.array(values[1:2025], dtype=np.float32) / 255.
+        image = np.asfarray(values[1:1025], dtype=np.float32).reshape(32, 32)
         image = self.transforms(image)
 
         return image, label

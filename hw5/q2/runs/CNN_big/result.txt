@@ -1,0 +1,6 @@
+
+    Model Name: CNN_big
+    Epochs: 100
+    Final loss: 0.10068242251873016
+    Best validation accuracy: 0.8483999967575073    
+    
